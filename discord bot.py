@@ -1,5 +1,3 @@
-from os import name
-
 import discord
 import os
 
