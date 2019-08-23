@@ -1,6 +1,7 @@
 from os import name
 
 import discord
+import os
 
 client = discord.Client()
 
@@ -23,5 +24,5 @@ async def on_message(message):
         await message.channel.send("```css\n[ 울산 서버 관리자명단 ]```\n```\n총관리자 Black_Net\n부총관리자 Hoya\n관리자 John Wick\n관리자 성현\n서버 개발팀 O-GU\n서버 개발팀 Tencheot\n인게임 관리자 dalki1404\n인게임 관리자 Roly_Poly\n인게임 관리자 바다(kocom9908)\n뉴비도우미 DOC\n뉴비도우미 Seabom```")
 
 
-
-client.run("NjE0MzU2MDUwNTc3MTk1MDA5.XV-bxQ.bI1Q6aUlwlOoFJ46Ct68VmSB7-Y")
+access_token = os.environ["BOT_TOKEN"]
+client.run("access_token")
